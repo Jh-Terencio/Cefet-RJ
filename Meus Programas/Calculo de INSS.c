@@ -9,21 +9,21 @@ int main()
 
     if(salario <= 1100)
     {
-        inss = salario*0.075;
+        inss = 1100*0.075;
     }
     else
         if(salario <= 2203.48)
         {
-            inss = salario*0.09;
+            inss = 2203.48*0.09;
         }
         else
             if(salario <= 3305.22)
             {
-                inss = salario*0.12;
+                inss = 3305.22*0.12;
             }
             else
             {
-                inss = salario*0.14;
+                inss = 6403.8*0.14;
             }
     salLqd = salario - inss;
     printf("Salario bruto: %.2f\t\tImposto: %.2f\tSalario liquido: %.2f", salario, inss, salLqd);
